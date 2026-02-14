@@ -1,0 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background: hsl(33, 100%, 80%));
+    margin: 5px;
+}
+
+/* Hide the default browser arrow */
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary {
+    list-style: none;   /* Removes default marker in Firefox */
+    display: flex;      /* Makes alignment easy */
+    align-items: center;    /* Vertically centers the arrow with text */
+    cursor: pointer;
+    padding: 2px;       /* Adjust as needed */
+    gap: 5px;           /* Space between arrow and text */
+}
+
+/* Custom arrow on the left */
+details summary::before {
+    content: "▶";
+    /* Right-pointing triangle */
+    font-size: 1.3em;
+    transition: transform 0.5s ease;
+    /* line-height: 1; */
+}
+
+/* Rotate when open (becomes a down arrow) */
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+h3 {
+    background-color: hsl(33, 100%, 78%);
+    border-radius: 20px;
+    padding: 5px 5px 5px 15px;
+}
+
+.aoo {
+    border-radius: 30px;
+    border: solid darkgrey 1px;
+    max-width: 800px;
+    padding: 5px;
+    box-shadow: gray;
+}
