@@ -33,20 +33,18 @@ details[open] summary::before {
 }
 
 h2 {
-    background-color: hsl(33, 100%, 78%);
     border-radius: 30px;
     padding: 0;
 }
 
 h3 {
-    background-color: hsl(33, 100%, 78%);
     border-radius: 20px;
     padding: 0;
 }
 
 .aoo {
     border-radius: 15px;
-    border: solid rgb(140, 140, 140) 1px;
+    border: solid rgb(140, 140, 140) 2px;
     max-width: 800px;
     box-shadow: rgb(95, 95, 95);
 }
