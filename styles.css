@@ -4,6 +4,28 @@
     margin: 5px;
 }
 
+/* ********** HERO SECTION ********** */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/glider-bg.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 { font-size: 3em; margin: 0; }
+.hero-content p { font-size: 1.2em; margin: 10px 0; }
+.cta-button { 
+    display: inline-block; 
+    background: #4a90e2; 
+    color: white; 
+    padding: 12px 24px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin-top: 20px;
+}
+.hero-image { width: 100%; height: auto; max-height: 400px; object-fit: cover; }
+
 /* Hide the default browser arrow */
 details summary::-webkit-details-marker {
     display: none;
@@ -45,7 +67,7 @@ h3 {
 
 .aoo {
     border-radius: 15px;
-    border: solid hsl(33, 100%, 50%) 2px;
+    border: solid hsl(240, 100%, 50%) 2px;
     max-width: 800px;
     box-shadow: rgb(95, 95, 95);
 }
