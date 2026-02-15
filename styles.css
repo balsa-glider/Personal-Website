@@ -4,6 +4,12 @@
     background: hsl(240, 100%, 95%);
 } */
 
+html, body {
+    margin: 0;
+    padding: 0;
+    /* height: 100%;  /* Optional: Ensures full viewport height if needed */
+}
+
 /* ********** HERO SECTION ********** */
 /* Hero Section: Solid Blue Stripe Across Top */
 .hero {
