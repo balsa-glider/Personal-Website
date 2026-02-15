@@ -33,6 +33,7 @@ html, body {
 .logo-img {
     width: 64px;  /* Slightly smaller for a compact stripe */
     height: 64px;
+    padding-left: .1em;
     flex-shrink: 0;  /* Doesn't squish */
     /* Optional: Tint white for the blue stripe (remove if you want original colors)
     filter: brightness(0) invert(1); */
@@ -45,7 +46,7 @@ html, body {
     color: white;  /* White text */
     text-align: left;  /* Left-justified */
     white-space: nowrap;  /* One line */
-    padding-left: 20px;
+    padding-left: .5em;  /* Small space from the logo */
 }
 
 .hero-content {
