@@ -1,30 +1,78 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background: hsl(240, 100%, 90%);
+    background: hsl(240, 100%, 98%);
     margin: 5px;
 }
 
 /* ********** HERO SECTION ********** */
+/* Hero Section: Solid Blue Stripe Across Top */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/glider-bg.jpg') center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    margin-bottom: 50px;
+    width: 100%;  /* Full width across the page */
+    background-color: #1e3a8a;  /* Solid blue stripe — no image or gradient */
+    color: white;  /* All text white */
+    padding: 0 20px;  /* Just left/right space — no top/bottom for thin stripe */
+    margin: 0;  /* Hugs the top edge */
+    height: 100px;  /* Fixed height for stripe feel — adjust to 80px for shorter */
+    display: flex;  /* Side-by-side layout if you add content later */
+    align-items: center;  /* Vertically centers the logo bar */
+    justify-content: space-between;  /* Pushes logo left, room for right-side stuff if needed */
 }
 
-.hero-content h1 { font-size: 3em; margin: 0; }
-.hero-content p { font-size: 1.2em; margin: 10px 0; }
-.cta-button { 
-    display: inline-block; 
-    background: #4a90e2; 
-    color: white; 
-    padding: 12px 24px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    margin-top: 20px;
+.logo-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;  /* Tiny space between SVG and text — set to 0 for zero gap */
 }
-.hero-image { width: 100%; height: auto; max-height: 400px; object-fit: cover; }
+
+.logo-img {
+    width: 32px;  /* Slightly smaller for a compact stripe */
+    height: 32px;
+    flex-shrink: 0;  /* Doesn't squish */
+    /* Optional: Tint white for the blue stripe (remove if you want original colors) */
+    filter: brightness(0) invert(1);
+}
+
+.site-name {
+    font-family: monospace;  /* Techy vibe */
+    font-size: 1.2em;  /* Scaled down for stripe */
+    font-weight: bold;
+    color: white;  /* White text */
+    text-align: left;  /* Left-justified */
+    white-space: nowrap;  /* One line */
+}
+
+.hero-content {
+    flex: 1;  /* Takes remaining space — empty for now */
+    text-align: left;
+}
+
+/* If you add h1/p back later, these are ready (but might need height tweaks) */
+.hero-content h1 { 
+    font-size: 2em; 
+    margin: 0;
+}
+
+.hero-content p { 
+    font-size: 1em; 
+    margin: 0;
+}
+
+/* Mobile: No big changes — stays full-width */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 15px;
+        height: 80px;  /* Slightly shorter on phone */
+    }
+    
+    .logo-img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .site-name {
+        font-size: 1em;
+    }
+}
 
 /* Hide the default browser arrow */
 details summary::-webkit-details-marker {
