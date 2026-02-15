@@ -1,7 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background: hsl(240, 100%, 98%);
-    margin: 5px;
+    background: hsl(240, 100%, 95%);
 }
 
 /* ********** HERO SECTION ********** */
@@ -33,7 +32,7 @@
 }
 
 .site-name {
-    font-family: monospace;  /* Techy vibe */
+    font-family: "Courier New", Couries, monospace;
     font-size: 1.2em;  /* Scaled down for stripe */
     font-weight: bold;
     color: white;  /* White text */
