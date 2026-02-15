@@ -34,7 +34,7 @@ details[open] summary::before {
 
 h2 {
     border-radius: 30px;
-    color: hsl(33, 100%, 85%);
+    background-color: hsl(33, 100%, 85%);
     padding: 0;
 }
 
