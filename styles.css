@@ -25,8 +25,8 @@
 }
 
 .logo-img {
-    width: 132px;  /* Slightly smaller for a compact stripe */
-    height: 132px;
+    width: 64px;  /* Slightly smaller for a compact stripe */
+    height: 64px;
     flex-shrink: 0;  /* Doesn't squish */
     /* Optional: Tint white for the blue stripe (remove if you want original colors) */
     filter: brightness(0) invert(1);
@@ -39,6 +39,7 @@
     color: white;  /* White text */
     text-align: left;  /* Left-justified */
     white-space: nowrap;  /* One line */
+    padding-left: 20px;
 }
 
 .hero-content {
