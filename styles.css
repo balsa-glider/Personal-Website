@@ -1,7 +1,8 @@
+/* DELETE THIS IF NECESSARY
 * {
     font-family: Arial, Helvetica, sans-serif;
     background: hsl(240, 100%, 95%);
-}
+} */
 
 /* ********** HERO SECTION ********** */
 /* Hero Section: Solid Blue Stripe Across Top */
@@ -24,8 +25,8 @@
 }
 
 .logo-img {
-    width: 32px;  /* Slightly smaller for a compact stripe */
-    height: 32px;
+    width: 132px;  /* Slightly smaller for a compact stripe */
+    height: 132px;
     flex-shrink: 0;  /* Doesn't squish */
     /* Optional: Tint white for the blue stripe (remove if you want original colors) */
     filter: brightness(0) invert(1);
@@ -33,7 +34,7 @@
 
 .site-name {
     font-family: "Courier New", Couries, monospace;
-    font-size: 1.2em;  /* Scaled down for stripe */
+    font-size: 2em;  /* Scaled down for stripe */
     font-weight: bold;
     color: white;  /* White text */
     text-align: left;  /* Left-justified */
