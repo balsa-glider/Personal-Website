@@ -62,7 +62,7 @@ html, body {
 }
 
 .main-nav a {
-    background-color: white;
+    color: white;
     text-decoration: none;
     font-size: 1.05em;
     font-weight: 500;
@@ -70,7 +70,7 @@ html, body {
 }
 
 .main-nav a:hover {
-    background-color: hsl(210, 100%, 80%);
+    color: hsl(210, 100%, 80%);
     text-decoration: underline;
 }
 
