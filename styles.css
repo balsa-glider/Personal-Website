@@ -19,8 +19,8 @@ html, body {
     /* margin: 0;  /* Hugs the top edge */
     height: 80px;  /* Blue stripe height */
     display: flex;  /* Side-by-side layout if you add content later */
-    /* align-items: center;  /* Vertically centers the logo bar */
-    justify-content: space-between;  /* Pushes logo left, room for right-side stuff if needed */
+    align-items: center;  /* Vertically centers the logo bar */
+    margin: 0;
 }
 
 .header-content {
@@ -41,7 +41,7 @@ html, body {
 .logo-img {
     width: 64px;  /* Slightly smaller for a compact stripe */
     height: 64px;
-    padding-left: .1em;
+    padding-left: 0.1em;
     flex-shrink: 0;  /* Doesn't squish */
 }
 
@@ -62,7 +62,7 @@ html, body {
 }
 
 .main-nav a {
-    background-color: blue;
+    background-color: white;
     text-decoration: none;
     font-size: 1.05em;
     font-weight: 500;
@@ -70,7 +70,7 @@ html, body {
 }
 
 .main-nav a:hover {
-    background-color: hsl(240, 100%, 50%);
+    background-color: hsl(210, 100%, 80%);
     text-decoration: underline;
 }
 
