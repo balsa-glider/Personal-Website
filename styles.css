@@ -72,7 +72,7 @@ html, body {
 }
 
 .main-nav a:hover {
-    background-color: hsl(240, 100%, 40%);                  /* Light blue hover effect */
+    background-color: hsl(240, 100%, 50%);
     text-decoration: underline;
 }
 
