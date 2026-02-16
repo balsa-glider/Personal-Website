@@ -60,11 +60,11 @@ html, body {
 /* Navigation */
 .main-nav {
     display: flex;
-    gap: 32px;                       /* Space between links */
+    gap: 15px;                       /* Space between links */
 }
 
 .main-nav a {
-    color: white;
+    background-color: blue;
     text-decoration: none;
     font-size: 1.05em;
     font-weight: 500;
@@ -72,41 +72,8 @@ html, body {
 }
 
 .main-nav a:hover {
-    color: #7dd3fc;                  /* Light blue hover effect */
+    background-color: hsl(240, 100%, 40%);                  /* Light blue hover effect */
     text-decoration: underline;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .hero {
-        padding: 0 20px;
-        height: 70px;
-    }
-    
-    .main-nav {
-        gap: 20px;
-    }
-    
-    .main-nav a {
-        font-size: 0.95em;
-    }
-}
-
-/* Mobile: No big changes — stays full-width */
-@media (max-width: 768px) {
-    .hero {
-        padding: 0 15px;
-        height: 80px;  /* Slightly shorter on phone */
-    }
-    
-    .logo-img {
-        width: 28px;
-        height: 28px;
-    }
-    
-    .site-name {
-        font-size: 1em;
-    }
 }
 
 /* Hide the default browser arrow */
