@@ -11,21 +11,21 @@ html, body {
 }
 
 /* ********** HERO SECTION ********** */
-.hero {
-    width: 100%;  /* Full width across the page */
-    background-color: blue;   /* deeper color: hsl(224, 64%, 33%); */
+.hero {   /* blue bar that holds the logo and site name */
+    width: 100%;
+    background-color: hsl(224, 64%, 33%);
     color: white;
     padding: 0 20px;  /* Just left/right space — no top/bottom for thin stripe */
-    margin: 0;  /* Hugs the top edge */
+    /* margin: 0;  /* Hugs the top edge */
     height: 80px;  /* Blue stripe height */
     display: flex;  /* Side-by-side layout if you add content later */
-    align-items: center;  /* Vertically centers the logo bar */
+    /* align-items: center;  /* Vertically centers the logo bar */
     justify-content: space-between;  /* Pushes logo left, room for right-side stuff if needed */
 }
 
 .header-content {
     width: 100%;
-    max-width: 1200px;               /* Keeps it from stretching too wide on big screens */
+    max-width: 1200px;      /* Keeps it from stretching too wide on big screens */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;  /* Logo left, nav right */
