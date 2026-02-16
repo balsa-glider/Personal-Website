@@ -11,7 +11,6 @@ html, body {
 }
 
 /* ********** HERO SECTION ********** */
-/* Hero Section: Solid Blue Stripe Across Top */
 .hero {
     width: 100%;  /* Full width across the page */
     background-color: #1e3a8a;  /* Solid blue stripe — no image or gradient */
@@ -22,6 +21,15 @@ html, body {
     display: flex;  /* Side-by-side layout if you add content later */
     align-items: center;  /* Vertically centers the logo bar */
     justify-content: space-between;  /* Pushes logo left, room for right-side stuff if needed */
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;               /* Keeps it from stretching too wide on big screens */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  /* Logo left, nav right */
+    align-items: center;
 }
 
 .logo-bar {
@@ -49,20 +57,39 @@ html, body {
     padding-left: .5em;  /* Small space from the logo */
 }
 
-.hero-content {
-    flex: 1;  /* Takes remaining space — empty for now */
-    text-align: left;
+/* Navigation */
+.main-nav {
+    display: flex;
+    gap: 32px;                       /* Space between links */
 }
 
-/* If you add h1/p back later, these are ready (but might need height tweaks) */
-.hero-content h1 { 
-    font-size: 2em; 
-    margin: 0;
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05em;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
-.hero-content p { 
-    font-size: 1em; 
-    margin: 0;
+.main-nav a:hover {
+    color: #7dd3fc;                  /* Light blue hover effect */
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 20px;
+        height: 70px;
+    }
+    
+    .main-nav {
+        gap: 20px;
+    }
+    
+    .main-nav a {
+        font-size: 0.95em;
+    }
 }
 
 /* Mobile: No big changes — stays full-width */
