@@ -57,7 +57,7 @@ html, body {
 /* Navigation */
 .main-nav {
     display: flex;
-    gap: 15px;                       /* Space between links */
+    gap: 15px;      /* Space between links */
 }
 
 .main-nav a {
@@ -70,7 +70,6 @@ html, body {
 }
 
 .main-nav a:hover {
-    color: hsl(210, 100%, 80%);
     text-decoration: underline;
 }
 
@@ -102,7 +101,7 @@ details[open] summary::before {
 
 h2 {
     border-radius: 30px;
-    background-color: hsl(33, 100%, 85%);
+    color: white;
     padding: 0;
 }
 
@@ -112,8 +111,10 @@ h3 {
 }
 
 .aoo {
-    border-radius: 15px;
-    border: solid hsl(240, 100%, 50%) 2px;
+    border-radius: 30px;
+    /*border: solid hsl(240, 100%, 50%) 2px; */
+    background-color:  hsl(224, 64%, 33%);
     max-width: 800px;
     box-shadow: rgb(95, 95, 95);
+
 }
