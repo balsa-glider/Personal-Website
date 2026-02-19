@@ -9,6 +9,13 @@ html, body {
     /* height: 100%;  /* Optional: Ensures full viewport height if needed */
 }
 
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;  /* Centers the main content */
+}
+
+
 /* ********** HERO SECTION ********** */
 .hero {   /* blue bar that holds the logo and site name */
     width: 100%;
