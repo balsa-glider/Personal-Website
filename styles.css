@@ -107,7 +107,7 @@ details[open] summary::before {
 h2 {
     border-radius: 30px;
     color: white;
-    padding: 10px 0;
+    margin: 10px 0;
 }
 
 h3 {
