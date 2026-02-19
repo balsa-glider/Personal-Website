@@ -73,8 +73,7 @@ html, body {
     text-decoration: underline;
 }
 
-/* Hide the default browser arrow */
-details summary::-webkit-details-marker {
+details summary::-webkit-details-marker {   /* Hide the default browser arrow */
     display: none;
 }
 
@@ -91,7 +90,7 @@ details summary {
 details summary::before {
     content: "▶";    /* Right-pointing triangle */
     font-size: 1.3em;
-    transition: transform 0.5s ease;   /* line-height: 1; */
+    transition: transform 0.3s ease;   /* line-height: 1; */
 }
 
 /* Rotate when open (becomes a down arrow) */
@@ -102,7 +101,7 @@ details[open] summary::before {
 h2 {
     border-radius: 30px;
     color: white;
-    padding: 0;
+    padding: 10;
 }
 
 h3 {
