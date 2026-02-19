@@ -83,6 +83,7 @@ details summary {
     align-items: center;    /* Vertically centers the arrow with text */
     cursor: pointer;
     padding: 2px;       /* Adjust as needed */
+    margin: 10px;
     gap: 5px;           /* Space between arrow and text */
 }
 
