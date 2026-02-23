@@ -22,12 +22,12 @@ main {
     width: 100%;
     background-color: hsl(224, 64%, 33%);
     color: white;
-    padding: 0 20px;  /* Just left/right space — no top/bottom for thin stripe */
-    /* margin: 0;  /* Hugs the top edge */
-    height: 80px;  /* Blue stripe height */
+    padding: 0 20px;
+    height: 80px;
     display: flex;  /* Side-by-side layout if you add content later */
     align-items: center;  /* Vertically centers the logo bar */
     margin: 0;
+    overflow-x: hidden;
 }
 
 .header-content {
@@ -63,18 +63,14 @@ main {
 }
 
 /* Navigation */
-.main-nav {
+.main-nav a{
     display: flex;
     gap: 15px;      /* Space between links */
-}
-
-.main-nav a {
     color: white;
     text-decoration: none;
     font-size: 1.05em;
     font-weight: 500;
     transition: all 1s ease;
-    margin-right: 20px;
 }
 
 .main-nav a:hover {
