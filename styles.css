@@ -90,13 +90,14 @@ details summary {
     display: flex;      /* Makes alignment easy */
     align-items: center;    /* Vertically centers the arrow with text */
     cursor: pointer;
-    gap: 5px;           /* Space between arrow and text */
+    gap: 10px;           /* Space between arrow and text */
 }
 
 /* Custom arrow on the left */
 details summary::before {
     content: "▶";    /* Right-pointing triangle */
     font-size: 1.3em;
+    color:  hsl(224, 64%, 33%);
     transition: transform 0.3s ease;   /* line-height: 1; */
 }
 
@@ -110,7 +111,7 @@ h2 {
     color: white;
     background-color:  hsl(224, 64%, 33%);
     padding: 0 10px;
-    height: 2rem;
+    height: 3rem;
 }
 
 h3 {
