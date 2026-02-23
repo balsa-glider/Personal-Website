@@ -85,15 +85,6 @@ details summary::-webkit-details-marker {   /* Hide the default browser arrow */
     display: none;
 }
 
-details summary {
-    list-style: none;   /* Removes default marker in Firefox */
-    display: flex;      /* Makes alignment easy */
-    align-items: center;    /* Vertically centers the arrow with text */
-    cursor: pointer;
-    gap: 10px;           /* Space between arrow and text */
-}
-
-/* Custom arrow on the left */
 details summary::before {
     content: "▶";    /* Right-pointing triangle */
     font-size: 1.3em;
@@ -106,6 +97,15 @@ details[open] summary::before {
     transform: rotate(90deg);
 }
 
+details summary {
+    list-style: none;   /* Removes default marker in Firefox */
+    display: flex;      /* Makes alignment easy */
+    align-items: center;    /* Vertically centers the arrow with text */
+    cursor: pointer;
+    gap: 10px;           /* Space between arrow and text */
+}
+
+/* Custom arrow on the left */
 .aoo {
     border-radius: 30px;
     /*border: solid hsl(240, 100%, 50%) 2px; */
@@ -117,7 +117,7 @@ h2 {
     border-radius: 1.25rem;
     color: white;
     background-color:  hsl(224, 64%, 33%);
-    align-items: center;
+    text-align: center;
     padding: 0 20px;
     height: 2.5rem;
 }
