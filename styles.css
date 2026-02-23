@@ -111,7 +111,7 @@ details[open] summary::before {
     /*border: solid hsl(240, 100%, 50%) 2px; */
     max-width: 600px;
     box-shadow: rgb(95, 95, 95);
-    margin: 10px 0;
+    margin: 0 0 0 auto;
 }
 
 h2 {
@@ -119,7 +119,7 @@ h2 {
     color: white;
     background-color:  hsl(224, 64%, 33%);
     align-items: center;
-    /*padding: 0 20px; */
+    padding: 0 20px;
     height: 2.5rem;
 }
 
