@@ -130,6 +130,10 @@ h3 {
     color: white;
     background-color:  hsl(224, 64%, 43%);
     margin-left: 40px;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h4 {
