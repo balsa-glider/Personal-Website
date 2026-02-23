@@ -111,7 +111,6 @@ details[open] summary::before {
     /*border: solid hsl(240, 100%, 50%) 2px; */
     max-width: 600px;
     box-shadow: rgb(95, 95, 95);
-    margin: 0 0 0 auto;
 }
 
 h2 {
