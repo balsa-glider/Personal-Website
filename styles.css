@@ -1,6 +1,7 @@
 /* DELETE THIS IF NECESSARY */
-* {
+*, *::before, *::after {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 } 
 
 html, body {
