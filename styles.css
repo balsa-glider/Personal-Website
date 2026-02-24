@@ -22,7 +22,7 @@ main {
     background-color: hsl(224, 64%, 33%);
     color: white;
     padding: 0 20px;
-    height: 80px;
+    height: 70px;
     display: flex;  /* Side-by-side layout if you add content later */
     align-items: center;  /* Vertically centers the logo bar */
     margin: 0;
@@ -52,7 +52,7 @@ main {
 }
 
 .site-name {
-    font-family: "Courier New", Couries, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 3em;  /* Scaled down for stripe */
     /* font-weight: bold; */
     color: white;  /* White text */
