@@ -112,6 +112,7 @@ h1 {
 /* Custom arrow on the left */
 .aoo {
     border-radius: 30px;
+    border: solid black 1px;
     /*border: solid hsl(240, 100%, 50%) 2px; */
     max-width: 600px;
     box-shadow: rgb(95, 95, 95);
