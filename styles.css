@@ -46,14 +46,20 @@ main {
     gap: 8px;  /* Tiny space between SVG and text — set to 0 for zero gap */
 }
 
-.logo-img {
-    width: 64px;  /* Slightly smaller for a compact stripe */
+/* .logo-img {
+    width: 64px;
     height: 64px;
     padding-left: 0.1em;
-    flex-shrink: 0;  /* Doesn't squish */
+    flex-shrink: 0;
+} */
+
+.logo-img {
+    width: clamp(40px, 10vw, 64px);   /* min 40px, preferred ~10% of viewport, max your original 64px */
+    height: clamp(40px, 10vw, 64px);
 }
 
 .site-name {
+    font-size: clamp(1.8rem, 6vw, 3rem);  /* scales smoothly from ~28px to 48px */
     font-family: "Courier New", Courier, monospace;
     font-size: 2.2em; 
     /* font-weight: bold; */
