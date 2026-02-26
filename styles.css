@@ -55,12 +55,13 @@ main {
 
 .site-name {
     font-family: "Courier New", Courier, monospace;
-    font-size: 3em;  /* Scaled down for stripe */
+    font-size: 2.2em; 
     /* font-weight: bold; */
     color: white;  /* White text */
     text-align: left;  /* Left-justified */
-    white-space: nowrap;  /* One line */
+    white-space: normal;  /* One line */
     padding-left: .5em;  /* Small space from the logo */
+    word-wrap: break-word;
 }
 
 /* Navigation */
