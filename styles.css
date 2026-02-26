@@ -155,3 +155,21 @@ ol, ul {
 li {
     margin: 0.1rem 0;
 }
+
+@media (max-width: 640px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .site-name {
+        white-space: normal;
+        font-size: 2.4em;          /* tune this down if still too wide */
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 14px 20px;
+    }
+}
