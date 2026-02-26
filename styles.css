@@ -28,7 +28,7 @@ main {
     display: flex;  /* Side-by-side layout if you add content later */
     align-items: center;  /* Vertically centers the logo bar */
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .header-content {
@@ -61,7 +61,7 @@ main {
     text-align: left;  /* Left-justified */
     white-space: normal;  /* One line */
     padding-left: .5em;  /* Small space from the logo */
-    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Navigation */
@@ -154,22 +154,4 @@ ol, ul {
 
 li {
     margin: 0.1rem 0;
-}
-
-@media (max-width: 640px) {
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .site-name {
-        white-space: normal;
-        font-size: 2.4em;          /* tune this down if still too wide */
-    }
-
-    .main-nav {
-        flex-wrap: wrap;
-        gap: 14px 20px;
-    }
 }
