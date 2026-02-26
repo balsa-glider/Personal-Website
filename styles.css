@@ -87,12 +87,13 @@ details summary::-webkit-details-marker {   /* Hide the default browser arrow */
     display: none;
 }
 
+/* REMOVE ARROW FOR NOW
 details summary::before {
-    content: "▶";    /* Right-pointing triangle */
+    content: "▶";
     font-size: 1.3em;
     color:  hsl(224, 64%, 33%);
-    transition: transform 0.3s ease;   /* line-height: 1; */
-}
+    transition: transform 0.3s ease;
+} */
 
 /* Rotate when open (becomes a down arrow) */
 details[open] summary::before {
