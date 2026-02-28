@@ -1,7 +1,7 @@
-*, {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arial", Helvetica, sans-serif;
     box-sizing: border-box;
 } 
 
@@ -16,17 +16,17 @@ main {
     margin: 0 auto;  /* Centers the main content */
 }
 
-
 .hero {
     width: 100%;
     background-color: hsl(224, 64%, 33%);
     color: white;
     padding: 0 20px;
-    height: 70px;
     display: flex;  /* Side-by-side layout if you add content later */
     align-items: center;  /* Vertically centers the logo bar */
     margin: 0;
     overflow: hidden;
+    justify-content: space-between;  /* Logo left, nav right */
+    flex-wrap: wrap;
 }
 
 .header-content {
@@ -40,47 +40,40 @@ main {
 
 .logo-bar {
     display: flex;
-    align-items: center;
-    gap: 8px;  /* Tiny space between SVG and text — set to 0 for zero gap */
+    align-items: left;  /* Aligns items to the left */
+    /* gap: 8px;  /* Tiny space between SVG and text — set to 0 for zero gap */
 }
 
-/* .logo-img {
-    width: 64px;
-    height: 64px;
-    padding-left: 0.1em;
-    flex-shrink: 0;
-} */
-
 .logo-img {
-    width: clamp(40px, 7vw, 64px);   /* min 40px, preferred ~10% of viewport, max your original 64px */
-    height: clamp(40px, 7vw, 64px);
+    max-width: 2.2rem;
+    max-height: 2.2rem;
+    padding-left: 0.1rem;
+    flex-shrink: 0;
 }
 
 .site-name {
-    font-size: clamp(1.8rem, 6vw, 3rem);  /* scales smoothly from ~28px to 48px */
     font-family: "Courier New", Courier, monospace;
-    font-size: 2.2em; 
-    /* font-weight: bold; */
+    font-size: 2.2rem; 
     color: white;  /* White text */
     text-align: left;  /* Left-justified */
     white-space: normal;  /* One line */
     padding-left: .5em;  /* Small space from the logo */
-    overflow-wrap: break-word;
+    align-items: center;
 }
 
 /* Navigation */
 .main-nav {
+    padding: 0.3rem 0;
     display: flex;
-    gap: 0.7rem;
+    justify-content: right;
+    gap: 1rem;
 }
 
 .main-nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.05em;
     font-weight: 500;
     transition: all 1s ease;
-    margin-right: 20px;
 }
 
 .main-nav a:hover {
@@ -107,7 +100,6 @@ h1 {
 /* Custom arrow on the left */
 .aoo {
     border-radius: 30px;
-    /*border: solid hsl(240, 100%, 50%) 2px; */
     max-width: 100% !important;
     box-shadow: 0 4px 8px rgb(95, 95, 95);
 }
