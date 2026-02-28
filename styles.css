@@ -30,15 +30,6 @@ main {
     flex-wrap: wrap;
 }
 
-.header-content {
-    width: 100%;
-    max-width: 1200px;      /* Keeps it from stretching too wide on big screens */
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;  /* Logo left, nav right */
-    align-items: center;
-}
-
 .logo-bar {
     display: flex;
     align-items: left;  /* Aligns items to the left */
@@ -48,7 +39,6 @@ main {
 .logo-img {
     max-width: 2.2rem;
     max-height: 2.2rem;
-    padding-left: 0.1rem;
     flex-shrink: 0;
 }
 
@@ -99,9 +89,9 @@ h1 {
 }
 
 /* Custom arrow on the left */
-.aoo {
+article {
     border-radius: 30px;
-    max-width: 100% !important;
+    max-width: 100%;
     box-shadow: 0 4px 8px rgb(95, 95, 95);
 }
 
