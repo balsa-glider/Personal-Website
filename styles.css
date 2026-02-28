@@ -3,17 +3,17 @@
     padding: 0;
     font-family: "Arial", Helvetica, sans-serif;
     box-sizing: border-box;
-} 
+}
 
 html, body {
-    width: 100%;  /* height: 100%;  /* Optional: Ensures full viewport height if needed */
-    overflow-x: hidden;   /* prevents side-scroll if overflow happens anyway */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 main {
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;  /* Centers the main content */
+    margin: 0 auto;
 }
 
 .hero {
@@ -22,17 +22,22 @@ main {
     color: white;
     border-bottom: 3px solid goldenrod;
     padding: 0.3rem 20px;
-    display: flex;  /* Side-by-side layout if you add content later */
-    align-items: center;  /* Vertically centers the logo bar */
+    display: flex;
+    /* Side-by-side layout if you add content later */
+    align-items: center;
+    /* Vertically centers the logo bar */
     margin: 0;
     overflow: hidden;
-    justify-content: space-between;  /* Logo left, nav right */
+    justify-content: space-between;
+    /* Logo left, nav right */
     flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgb(95, 95, 95);
 }
 
 .logo-bar {
     display: flex;
-    align-items: left;  /* Aligns items to the left */
+    align-items: left;
+    /* Aligns items to the left */
     /* gap: 8px;  /* Tiny space between SVG and text — set to 0 for zero gap */
 }
 
@@ -44,11 +49,15 @@ main {
 
 .site-name {
     font-family: "Courier New", Courier, monospace;
-    font-size: 2.2rem; 
-    color: white;  /* White text */
-    text-align: left;  /* Left-justified */
-    white-space: normal;  /* One line */
-    padding-left: .5em;  /* Small space from the logo */
+    font-size: 2.2rem;
+    color: white;
+    /* White text */
+    text-align: left;
+    /* Left-justified */
+    white-space: normal;
+    /* One line */
+    padding-left: .5em;
+    /* Small space from the logo */
     align-items: center;
 }
 
@@ -71,21 +80,27 @@ main {
     text-decoration: underline;
 }
 
-details summary::-webkit-details-marker {   /* Hide the default browser arrow */
+details summary::-webkit-details-marker {
+    /* Hide the default browser arrow */
     display: none;
 }
 
 details summary {
-    list-style: none;   /* Removes default marker in Firefox */
-    display: flex;      /* Makes alignment easy */
-    align-items: center;    /* Vertically centers the arrow with text */
+    list-style: none;
+    /* Removes default marker in Firefox */
+    display: flex;
+    /* Makes alignment easy */
+    align-items: center;
+    /* Vertically centers the arrow with text */
     cursor: pointer;
-    gap: 10px;           /* Space between arrow and text */
+    gap: 10px;
+    /* Space between arrow and text */
 }
 
 h1 {
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
 }
 
 /* Custom arrow on the left */
@@ -98,7 +113,7 @@ article {
 h2 {
     border-radius: 1.25rem;
     color: white;
-    background-color:  hsl(224, 64%, 33%);
+    background-color: hsl(224, 64%, 33%);
     text-align: center;
     padding: 0 20px;
     margin: 0.5rem;
@@ -106,12 +121,14 @@ h2 {
     width: 100%;
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
+    font-weight: 1;
 }
 
 h3 {
     border-radius: 20px;
     color: white;
-    background-color:  hsl(224, 64%, 43%);
+    background-color: hsl(224, 64%, 43%);
     margin: 0.5rem 0 0.5rem 2rem;
     height: 1.5rem;
     display: flex;
@@ -124,9 +141,11 @@ h4 {
 }
 
 ol, ul {
+    list-style-position: inside;
     margin: 0.3rem 0;
 }
 
 li {
-    margin: 0.1rem 0;
+    margin: 0.1rem 2rem;
+    text-indent: 0rem;
 }
