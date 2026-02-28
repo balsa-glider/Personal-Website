@@ -20,7 +20,7 @@ main {
     width: 100%;
     background-color: hsl(224, 64%, 33%);
     color: white;
-    padding: 0 20px;
+    padding: 0.3rem 20px;
     display: flex;  /* Side-by-side layout if you add content later */
     align-items: center;  /* Vertically centers the logo bar */
     margin: 0;
